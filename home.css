@@ -8,7 +8,7 @@
 body{
     height: 100%;
 }
-.navbar, .notification{
+.navbar , .notification{
     width: 7.5%;
     height: 100%;
     margin-top: 1.5rem; 
@@ -22,18 +22,23 @@ body{
 .navbar .up ul{
     list-style: none;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-end;
     align-items: center; 
     flex-direction: column; 
     margin-bottom: 10px; 
     padding-bottom: 10px;
+    position: absolute;
 }
 
-.below{
+
+.below ul{
+    list-style: none;
     display: flex;
     justify-content: flex-end;
     align-items: center; 
-    flex-direction: column;
+    flex-direction: column; 
+    margin-bottom: 10px; 
+    padding-bottom: 10px;
     position: absolute;
     bottom: 0;
 }
@@ -69,17 +74,20 @@ body{
 
     .navbar nav{
         flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
+        /* justify-content: space-around;
+        align-items: center; */
     }
 
     .navbar .up ul{
         flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
+        /* justify-content: space-evenly;
+        align-items: center; */
     }
-
-    .below{
+    
+    .below ul{
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
         position: absolute;
         top: 0;
         bottom: auto;
