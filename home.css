@@ -2,11 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    list-style: none;
 }
 
 body{
     height: 100%;
+    font-family: 'Roboto Slab', serif;
+}
+
+.app{
+    display: flex;
+    flex-direction: row;
 }
 .navbar , .notification{
     width: 7.5%;
@@ -14,6 +19,9 @@ body{
     margin-top: 1.5rem; 
 } 
 
+.notification{
+    margin-top: 0; 
+}
 .navbar nav{
     height: 100%;
     width: 100%;
@@ -22,7 +30,7 @@ body{
 .navbar .up ul{
     list-style: none;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center; 
     flex-direction: column; 
     margin-bottom: 10px; 
@@ -48,21 +56,85 @@ body{
     padding: 1rem 0.75rem;
     margin: 0 1.5rem;
     border-radius: 0.75rem;
-    color: rgba(0, 0, 0, 0.25);
+    color: rgba(0, 0, 0, 0.35);
     transition: all 0.2s;
     margin-bottom: 1rem;
     text-align: center;
 }
 
-/* .notification {
-    width: 7.5%;
-} */
+
 .navbar  li:hover,  .below li:hover{
     background-color: #4143ef;
     color: whitesmoke;
 }
 
+.main-wrapper{
+    display: block;
+}
 
+.userInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 20rem;
+    height: 100%;
+    padding: 3rem 2rem;
+    background-color: lightblue;
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name .text{
+    margin-left: 0.5rem;
+}
+img {
+    width: 4rem;
+    height: 4rem;
+    margin-right: 10px;
+    border-radius: 50%;
+    object-fit: contain;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.35);
+}
+
+
+.text p{
+    display: flex;
+    align-items: center;
+    font-size: 1.7rem;
+    margin-bottom: 0.25rem;
+    font-weight: bolder;
+}
+
+.balance{
+    padding: 2rem 2.5rem;
+}
+
+.balance .date{
+    margin-bottom: 0.75rem;
+    font-weight: 500;
+}
+
+.balanceInfo{
+    margin-bottom: 1rem;
+}
+h2{
+    font-size: 1.7rem;
+    margin-bottom: 0.25rem;
+    font-weight: bolder;
+}
+
+span{
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.75rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.35);
+}
 
 @media screen and (max-width:600px){
     .navbar{
@@ -72,16 +144,11 @@ body{
         height: 10%;
     }
 
-    .navbar nav{
-        flex-direction: row;
-        /* justify-content: space-around;
-        align-items: center; */
-    }
-
     .navbar .up ul{
+        width: 100%;
         flex-direction: row;
-        /* justify-content: space-evenly;
-        align-items: center; */
+        justify-content: space-evenly;
+        align-items: center;
     }
     
     .below ul{
@@ -94,3 +161,4 @@ body{
         right: 0;
     }
 }
+
