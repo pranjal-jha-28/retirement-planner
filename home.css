@@ -76,10 +76,10 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 20rem;
+    width: 25rem;
     height: 100%;
     padding: 3rem 2rem;
-    background-color: lightblue;
+    background-color: rgba(0, 0, 0, 0.025);
 }
 
 .name {
@@ -109,16 +109,16 @@ img {
     font-weight: bolder;
 }
 
-.balance{
+.balance , .transaction{
     padding: 2rem 2.5rem;
 }
 
-.balance .date{
+.sub-heading{
     margin-bottom: 0.75rem;
     font-weight: 500;
 }
 
-.balanceInfo{
+.balanceInfo , .recent{
     margin-bottom: 1rem;
 }
 h2{
@@ -136,6 +136,34 @@ span{
     color: rgba(0, 0, 0, 0.35);
 }
 
+.recent{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    padding-bottom: 0.5rem;
+}
+.recent p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.75rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+.btn{
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.btn-primary{
+    background-color: #4143ef;
+    color: whitesmoke;
+}
+
+.btn i{
+    margin-left: 0.5rem;
+}
 @media screen and (max-width:600px){
     .navbar{
         position: absolute;
