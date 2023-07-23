@@ -72,7 +72,7 @@ body{
     display: flex;
 }
 
-.userInfo {
+.userInfo{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -196,6 +196,7 @@ span{
     outline: none;
     text-align: center;
     letter-spacing: 2px;
+    width: 10rem;
 }
 
 .btn-primary{
@@ -210,6 +211,49 @@ span{
 .blue {
     color: #4143ef;
 }
+
+.retirement-startegy{
+    width: 15rem;
+    height: 100%;
+}
+.retirement-startegy-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 14rem;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.025);
+    margin-top: 5rem;
+    border-radius: 2px;
+}
+
+.retirement{
+    padding: 1rem;
+    color: black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.details{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.75rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+.details ul{
+    list-style: none;
+}
+
+.details li{
+    margin-bottom: 0.75rem;
+}
+
 @media screen and (max-width:600px){
     .navbar{
         position: fixed;

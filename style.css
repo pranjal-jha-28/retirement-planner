@@ -1,8 +1,3 @@
-/* $color-wing: dodgerblue;
-$color-sub-wing: lighten(dodgerblue, 10%);
-$color-background: #d6c18b;
-$color-twitter: #4099FF; */
-
 html {
     box-sizing: border-box;  
 }
@@ -13,16 +8,12 @@ html {
 
 html, body {
     height: 100%;
-    /* margin: 0; */
 }
 
 body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background: $color-background;
-    perspective-origin: 50% 50%;
-    perspective: 800px; */
 } 
 
 .butterfly {
@@ -35,7 +26,6 @@ body {
     width: 30px;
     
     &::before {
-        /* background: darken($color-background,55%); */
         border-radius: 50%;
         content: '';
         display: block;
@@ -98,9 +88,6 @@ body {
     .bit {
         background: dodgerblue;
     }
-    /* .bit::after {
-        background: $color-sub-wing;
-    } */
     
     .bit, .bit::after {
         border-radius: 50%;
