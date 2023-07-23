@@ -11,6 +11,8 @@
         href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Dancing+Script:wght@600;700&family=Dongle&family=Fira+Sans:ital,wght@0,300;0,400;1,300;1,400&family=PT+Serif:wght@400;700&family=Poppins:wght@300;400;500&family=Roboto+Slab:wght@300;400;500&family=Roboto:wght@300;400;500&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/09b2cb2630.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./home.js"></script>
     <title>Retirement Planner</title>
 </head>
 
@@ -82,7 +84,50 @@
                 </div>
             </div>
             <div class="retirement-income">
-
+                <div class="income-info">
+                    <div class="retirement-heading">
+                        <div class="sub-heading blue">Retirement Income</div>
+                        <h3>Starting Year 2056</h3>
+                    </div>
+                    <div class="metric">
+                        <div class="amount-description">
+                            <div class="amount">$300,000</div>
+                            <span class="description">My Goal</span>
+                        </div>
+                        <div class="amount-description">
+                            <div class="amount">59%</div>
+                            <span class="description">Goal Achieved</span>
+                        </div>
+                        <div class="amount-description">
+                            <div class="amount">$300</div>
+                            <span class="description">Est. Monthly Income</span>
+                        </div>
+                    </div>
+                    <div class="contribution">
+                        <div class="sub-heading">Contribution Overtime</div>
+                        <div class="contribution-chart">
+                            <canvas id="contribution-chart"></canvas>
+                        </div>
+                    </div>
+                    <div class="peer-comparision">
+                        <div class="peer-comparision-heading">
+                            <div class="sub-heading">How do I compare to my peers?</div>
+                            <span>These numbers represent current goal achievement</span>
+                        </div>
+                        <div class="peer-metric">
+                            <ul class="personal-info">
+                                <li>Age: &nbsp; Under 30 <i class="fa-solid fa-caret-down"></i></li>
+                                <li>Salary: &nbsp; K 20 - K 30 <i class="fa-solid fa-caret-down"></i></li>
+                                <li>Gender: &nbsp; Male <i class="fa-solid fa-caret-down"></i></li>
+                            </ul>
+                            <div class="metric-percent">
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="retirement-startegy">
                 <div class="balance">
@@ -101,8 +146,7 @@
                     </div>
                 </div>
             </div>
-    </div>
-    </main>
+        </main>
     </div>
 </body>
 
